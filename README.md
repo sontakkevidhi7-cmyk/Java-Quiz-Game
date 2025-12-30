@@ -3,7 +3,6 @@ The Java Quiz Game is a console-based program that tests users’ Java knowledge
 
 
 ```java
-
 import java.util.Scanner;
 
 public class QuizGame {
