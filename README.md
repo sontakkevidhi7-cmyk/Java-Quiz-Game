@@ -1,110 +1,43 @@
-# Java-Quiz-Game
+# 🧠 Java Quiz Game
 
+A simple **console-based Quiz Game** built using **Java**, designed to test basic Java programming knowledge.  
+The game asks multiple-choice questions and displays the final score at the end.
 
+---
 
-```java
-import java.util.Scanner;
+## ✨ Features
 
-public class QuizGame {
-    public static void main(String[] args) {
+- 📘 Java MCQ-based quiz
+- ⌨️ User input using Scanner
+- ✅ Instant feedback for each answer
+- 📊 Score calculation
+- 🎉 Pass / ❌ Fail result display
 
-        Scanner sc = new Scanner(System.in);
-        int score = 0;
+---
 
-        System.out.println("===== JAVA QUIZ GAME =====");
+## 🛠️ Technologies Used
 
-        // Question 1
-        System.out.println("\nQ1. Java is a ?");
-        System.out.println("1) Programming Language");
-        System.out.println("2) Operating System");
-        System.out.println("3) Browser");
-        System.out.println("4) Game");
-        int ans1 = sc.nextInt();
+- **Java**
+- `Scanner` class for input
 
-        if (ans1 == 1) {
-            System.out.println("Correct Answer!");
-            score++;
-        } else {
-            System.out.println("Wrong Answer!");
-            System.out.println(" Correct Answer is: 1) Programming Language");
-        }
+---
 
-        // Question 2
-        System.out.println("\nQ2. Which loop runs at least one time?");
-        System.out.println("1) for");
-        System.out.println("2) while");
-        System.out.println("3) do-while");
-        System.out.println("4) switch");
-        int ans2 = sc.nextInt();
+## 📂 How the Game Works
 
-        if (ans2 == 3) {
-            System.out.println("Correct Answer!");
-            score++;
-        } else {
-            System.out.println("Wrong Answer!");
-            System.out.println("Correct Answer is: 3) do-while");
-        }
+1. The quiz starts with 5 Java-related questions.
+2. Each question has **4 multiple-choice options**.
+3. The user selects the correct option number.
+4. For each correct answer:
+   - Score increases by 1.
+5. Final result is shown after all questions are answered:
+   - **Pass** if score ≥ 3
+   - **Try Again** if score < 3
 
-        // Question 3
-        System.out.println("\nQ3. Which keyword is used to create object?");
-        System.out.println("1) class");
-        System.out.println("2) new");
-        System.out.println("3) static");
-        System.out.println("4) void");
-        int ans3 = sc.nextInt();
+---
 
-        if (ans3 == 2) {
-            System.out.println("Correct Answer!");
-            score++;
-        } else {
-            System.out.println("Wrong Answer!");
-            System.out.println(" Correct Answer is: 2) new");
-        }
+## ▶️ How to Run
 
-        // Question 4
-        System.out.println("\nQ4. Which data type is used for decimal values?");
-        System.out.println("1) int");
-        System.out.println("2) char");
-        System.out.println("3) float");
-        System.out.println("4) boolean");
-        int ans4 = sc.nextInt();
-
-        if (ans4 == 3) {
-            System.out.println("Correct Answer!");
-            score++;
-        } else {
-            System.out.println("Wrong Answer!");
-            System.out.println(" Correct Answer is: 3) float");
-        }
-
-        // Question 5
-        System.out.println("\nQ5. Which symbol is used for single-line comment?");
-        System.out.println("1) /* */");
-        System.out.println("2) //");
-        System.out.println("3) #");
-        System.out.println("4) <!-- -->");
-        int ans5 = sc.nextInt();
-
-        if (ans5 == 2) {
-            System.out.println("Correct Answer!");
-            score++;
-        } else {
-            System.out.println("Wrong Answer!");
-            System.out.println(" Correct Answer is: 2) //");
-        }
-
-        // Final Result
-        System.out.println("\n===== RESULT =====");
-        System.out.println("Your Score: " + score + " / 5");
-
-        if (score >= 3) {
-            System.out.println(" Congratulations! You Passed");
-        } else {
-            System.out.println(" Try Again");
-        }
-
-        sc.close();
-    }
-}
-
-
+1. Install **Java JDK** on your system.
+2. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/java-quiz-game.git
